@@ -1,0 +1,284 @@
+ 
+Command Executed:
+ping google.com
+
+Command Output:
+Disparando google.com [142.250.79.46] com 32 bytes de dados:
+Resposta de 142.250.79.46: bytes=32 tempo=9ms TTL=57
+Resposta de 142.250.79.46: bytes=32 tempo=7ms TTL=57
+Resposta de 142.250.79.46: bytes=32 tempo=10ms TTL=57
+Resposta de 142.250.79.46: bytes=32 tempo=13ms TTL=57
+
+Estat°sticas do Ping para 142.250.79.46:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um n£mero redondo de vezes em milissegundos:
+    M°nimo = 7ms, M ximo = 13ms, MÇdia = 9ms
+
+
+
+
+Command Executed:
+tracert google.com
+
+Command Output:
+Rastreando a rota para google.com [142.250.79.46]
+com no m ximo 30 saltos:
+
+  1     *        4 ms     4 ms  172.192.110.1 
+  2     *        *        *     Esgotado o tempo limite do pedido.
+  3     2 ms     3 ms     2 ms  179.182.46.244 
+  4    26 ms    14 ms    14 ms  152-255-190-78.user.vivozap.com.br [152.255.190.78] 
+  5    12 ms    11 ms    13 ms  72.14.243.38 
+  6     9 ms    17 ms    13 ms  142.251.77.41 
+  7    11 ms    10 ms    11 ms  142.251.48.157 
+  8    14 ms    10 ms    11 ms  rio07s04-in-f14.1e100.net [142.250.79.46] 
+
+Rastreamento conclu°do.
+
+
+
+Command Executed:
+ipconfig
+
+Command Output:
+Configuraá∆o de IP do Windows
+
+
+Adaptador de Rede sem Fio Conex∆o Local* 9:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+
+Adaptador de Rede sem Fio Conex∆o Local* 10:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+
+Adaptador de Rede sem Fio Wi-Fi 3:
+
+   Sufixo DNS espec°fico de conex∆o. . . . . . : PROZ.LAB
+   Endereáo IPv6 de link local . . . . . . . . : fe80::4305:110e:1351:f9d6%4
+   Endereáo IPv4. . . . . . . .  . . . . . . . : 172.192.110.111
+   M scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padr∆o. . . . . . . . . . . . . . . : 172.192.110.1
+
+Adaptador Ethernet Conex∆o de Rede Bluetooth 3:
+
+   Estado da m°dia. . . . . . . . . . . . . .  : m°dia desconectada
+   Sufixo DNS espec°fico de conex∆o. . . . . . : 
+
+
+
+
+Command Executed:
+netstat -e
+
+Command Output:
+Estat°sticas de interface
+
+                           Recebido         Enviado
+
+Bytes                    4178214129       444435411
+Pacotes unicast            17400994         4716908
+Pacotes n∆o unicast           10479           34580
+Descartados                       0               0
+Erros                             0               0
+Prot. desconhecidos               0
+
+
+
+
+Command Executed:
+systeminfo | find "Tempo de InicializaÁ„o do Sistema"
+
+Command Output:
+Tempo de Inicializaá∆o do Sistema:         18/06/2024, 10:20:02
+
+
+
+
+Command Executed:
+netstat -an | findstr :5000
+
+Command Output:
+  TCP    127.0.0.1:5000         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:5000         127.0.0.1:53886        TIME_WAIT
+  TCP    127.0.0.1:5000         127.0.0.1:53916        ESTABLISHED
+  TCP    127.0.0.1:5000         127.0.0.1:53917        ESTABLISHED
+  TCP    127.0.0.1:53889        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53900        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53901        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53907        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53908        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53910        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53911        127.0.0.1:5000         TIME_WAIT
+  TCP    127.0.0.1:53916        127.0.0.1:5000         ESTABLISHED
+  TCP    127.0.0.1:53917        127.0.0.1:5000         ESTABLISHED
+
+
+
+
+Command Executed:
+route print
+
+Command Output:
+===========================================================================
+Lista de interfaces
+ 19...6c 94 66 35 84 92 ......Microsoft Wi-Fi Direct Virtual Adapter
+ 13...6e 94 66 35 84 91 ......Microsoft Wi-Fi Direct Virtual Adapter #2
+  4...6c 94 66 35 84 91 ......Intel(R) Wireless-AC 9560
+ 12...6c 94 66 35 84 95 ......Bluetooth Device (Personal Area Network) #3
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+Tabela de rotas IPv4
+===========================================================================
+Rotas ativas:
+Endereáo de rede          M scara   Ender. gateway       Interface   Custo
+          0.0.0.0          0.0.0.0    172.192.110.1  172.192.110.111     35
+        127.0.0.0        255.0.0.0      No v°nculo         127.0.0.1    331
+        127.0.0.1  255.255.255.255      No v°nculo         127.0.0.1    331
+  127.255.255.255  255.255.255.255      No v°nculo         127.0.0.1    331
+    172.192.110.0    255.255.255.0      No v°nculo   172.192.110.111    291
+  172.192.110.111  255.255.255.255      No v°nculo   172.192.110.111    291
+  172.192.110.255  255.255.255.255      No v°nculo   172.192.110.111    291
+        224.0.0.0        240.0.0.0      No v°nculo         127.0.0.1    331
+        224.0.0.0        240.0.0.0      No v°nculo   172.192.110.111    291
+  255.255.255.255  255.255.255.255      No v°nculo         127.0.0.1    331
+  255.255.255.255  255.255.255.255      No v°nculo   172.192.110.111    291
+===========================================================================
+Rotas persistentes:
+  Nenhuma
+
+Tabela de rotas IPv6
+===========================================================================
+Rotas ativas:
+ Se destino de rede de mÇtrica      Gateway
+  1    331 ::1/128                  No v°nculo
+  4    291 fe80::/64                No v°nculo
+  4    291 fe80::4305:110e:1351:f9d6/128
+                                    No v°nculo
+  1    331 ff00::/8                 No v°nculo
+  4    291 ff00::/8                 No v°nculo
+===========================================================================
+Rotas persistentes:
+  Nenhuma
+
+
+
+
+Command Executed:
+arp -a
+
+Command Output:
+Interface: 172.192.110.111 --- 0x4
+  Endereáo IP           Endereáo f°sico       Tipo
+  172.192.110.1         78-45-58-f8-3a-07     dinÉmico  
+  172.192.110.255       ff-ff-ff-ff-ff-ff     est tico  
+  224.0.0.22            01-00-5e-00-00-16     est tico  
+  224.0.0.251           01-00-5e-00-00-fb     est tico  
+  224.0.0.252           01-00-5e-00-00-fc     est tico  
+  239.255.255.250       01-00-5e-7f-ff-fa     est tico  
+  239.255.255.253       01-00-5e-7f-ff-fd     est tico  
+  255.255.255.255       ff-ff-ff-ff-ff-ff     est tico  
+
+
+
+
+Command Executed:
+nbtstat -r
+
+Command Output:
+    Resoluá∆o de nomes NetBIOS e Estat°sticas de registro
+    --------------------------------------------------------
+
+    Resolvidas por difus∆o          = 0
+    Resolvido por servidor de nome  = 0
+
+    Registrado por difus∆o          = 6
+    Registrado por servidor de nome = 0
+
+
+
+
+Command Executed:
+nbtstat -n
+
+Command Output:
+    
+Wi-Fi 3:
+Endereáo-Ip n¢: [172.192.110.111] Identificador de escopo: []
+
+            Tabela de nomes locais de NetBIOS
+
+       Nome               Tipo         Status
+    ---------------------------------------------
+    MGJUI-LAB13N   <20>  EXCLUSIVO   Registrado 
+    MGJUI-LAB13N   <00>  EXCLUSIVO   Registrado 
+    WORKGROUP      <00>  GRUPO       Registrado 
+    
+Conex∆o de Rede Bluetooth 3:
+Endereáo-Ip n¢: [0.0.0.0] Identificador de escopo: []
+
+    N∆o h  nomes no cache
+    
+Conex∆o Local* 9:
+Endereáo-Ip n¢: [0.0.0.0] Identificador de escopo: []
+
+    N∆o h  nomes no cache
+    
+Conex∆o Local* 10:
+Endereáo-Ip n¢: [0.0.0.0] Identificador de escopo: []
+
+    N∆o h  nomes no cache
+
+
+
+
+Command Executed:
+hostname
+
+Command Output:
+MGJUI-LAB13N
+
+
+
+
+Command Executed:
+nslookup uol.com.br 8.8.8.8
+
+Command Output:
+DNS request timed out.
+    timeout was 2 seconds.
+Servidor:  UnKnown
+Address:  8.8.8.8
+
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+
+
+
+
+
+Command Executed:
+netsh interface ipv4 show interfaces
+
+Command Output:
+÷nd     Met         MTU          Estado                Nome
+---  ----------  ----------  ------------  ---------------------------
+  1          75  4294967295  connected     Loopback Pseudo-Interface 1
+ 19          25        1500  disconnected  Conex∆o Local* 9
+ 13          25        1500  disconnected  Conex∆o Local* 10
+  4          35        1500  connected     Wi-Fi 3
+ 12          65        1500  disconnected  Conex∆o de Rede Bluetooth 3
+
+
+
+
